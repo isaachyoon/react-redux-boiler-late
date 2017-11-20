@@ -1,0 +1,34 @@
+{
+  "clientInfo": [
+    {
+      "name": "Isaac Yoon",
+      "email": "isaac.yoon@aofl.com",
+      "number": 3101234567,
+      "status": "unopened"
+    },
+    {
+      "name": "Jimothy Zhang",
+      "email": "isaac.yoon@aofl.com",
+      "number": 3101234567,
+      "status": "unopened"
+    },
+    {
+      "name": "Eric Edelist",
+      "email": "isaac.yoon@aofl.com",
+      "number": 3101234567,
+      "status": "unopened"
+    },
+    {
+      "name": "Carmen Garcia",
+      "email": "isaac.yoon@aofl.com",
+      "number": 3101234567,
+      "status": "unopened"
+    },
+    {
+      "name": "Angelica Mendoza",
+      "email": "isaac.yoon@aofl.com",
+      "number": 3101234567,
+      "status": "unopened"
+    }
+  ]
+}
