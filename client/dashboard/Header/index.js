@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {clientData} from '../../actions';
+import {login} from '../../services/api/index'
 
 class Header extends React.Component {
   constructor(props){
@@ -10,9 +11,11 @@ class Header extends React.Component {
       number: ''
     }
   }
-
+ 
   submitInfo(input) {
     console.log(this.state.name, this.state.number)
+    console.log('16', login)
+    login();
     this.props.clientData({
       name: this.state.name,
       number: this.state.number
