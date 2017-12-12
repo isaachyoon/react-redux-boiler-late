@@ -6,7 +6,7 @@
   "author": "Isaac yoon",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server webpack-p",
+    "start": "webpack-dev-server",
     "build": "webpack -p",
     "dev": "webpack-devserver"
   },
@@ -17,6 +17,7 @@
     "path": "^0.12.7",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-hot-loader": "^3.1.3",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",

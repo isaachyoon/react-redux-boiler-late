@@ -14,7 +14,10 @@ app.get('/', (req, res) => {
 
 app.get('/login', function(req, res) {
   console.log('request from ');
-  res.send('what up')
+  res.send('what up asderr')
 })
+
+
+
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))

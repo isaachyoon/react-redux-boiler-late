@@ -11,7 +11,12 @@ var BUILD_DIR = path.join(__dirname, 'client/public');
 
 
 module.exports = {
-  entry: './client/index.js',
+  // entry: './client/index.js',
+  //script to make react hot load
+  entry: [
+    'react-hot-loader/patch',
+    './client/index.js'
+  ],
   output: {
     path: BUILD_DIR,
     filename: 'index_bundle.js'

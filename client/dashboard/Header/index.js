@@ -14,7 +14,6 @@ class Header extends React.Component {
  
   submitInfo(input) {
     console.log(this.state.name, this.state.number)
-    console.log('16', login)
     login();
     this.props.clientData({
       name: this.state.name,
