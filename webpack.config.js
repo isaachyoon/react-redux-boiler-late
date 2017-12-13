@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const cssLoader = require('css-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './client/index.html',
@@ -17,6 +18,7 @@ module.exports = {
     'react-hot-loader/patch',
     './client/index.js'
   ],
+  devtool: 'source-map',  
   output: {
     path: BUILD_DIR,
     filename: 'index_bundle.js'
@@ -27,7 +29,17 @@ module.exports = {
         loader: 'babel-loader', 
         exclude: /node_modules/
       },
-    ]
+      {
+        test: /\.css$/,
+        loaders: ['style-loader', 'css-loader']
+      }
+    ],
+    // rules: [
+    //   {
+    //     test: /\.css$/,
+    //     use: [ 'style-loader', 'css-loader' ]
+    //   }
+    // ]
   },
   plugins: [
     HtmlWebpackPluginConfig,
